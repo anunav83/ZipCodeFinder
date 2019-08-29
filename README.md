@@ -18,5 +18,8 @@ Create the traing data using google geocode api to get info on zipcodes.
 
 ### Zip Codes in Training Data
 
+![Test Image 4](https://github.com/anunav83/ZipCodeFinder/blob/master/ZipCode-Distribution.png)
 
 ### Distribution of datapoints grouped by their Zipcode.
+
+![Test Image 5](https://github.com/anunav83/ZipCodeFinder/blob/master/ZipCode-OnAMap.png)
