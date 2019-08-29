@@ -1,37 +1,22 @@
-## Welcome to GitHub Pages
+## Finding Zip Codes based on latitude and longitude
 
-You can use the [editor on GitHub](https://github.com/anunav83/ZipCodeFinder/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+As part of another project I had geocodes of over 100,000 location beloging to same neighborhood, the data is useless unless we had the ZIP codes the location belonged to. Using google APIs / other Thrid Party APIs had a cap on how many zipcodes we could find in a day for free.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+In this project we will determine the zip codes based on the geocode( latitude and longitude) with upto 97.7% accuracy using clustering techniques ( KNearest Neigbors)
 
-### Markdown
+### Training Data 
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Below table contains few records we have in our training data (TrainingData.csv). THe training data has geocodes and the corresponding ZIP Code
 
-```markdown
-Syntax highlighted code block
+| latitude | longitude | address | zipcode |
+| :---         |     :---:      |          ---: |          ---: |
+| 37.783970 |-122.390156 | 180 Brannan St, San Francisco, CA 94105, USA	|94105|
+|	37.771100 |-122.424606 | Market St & Laguna St, San Francisco, CA 94102 |94102|
+|	37.755795	|-122.432384 | 822 Noe St, San Francisco, CA 94114, USA	|94114|
 
-# Header 1
-## Header 2
-### Header 3
+Create the traing data using google geocode api to get info on zipcodes.
 
-- Bulleted
-- List
+### Zip Codes in Training Data
 
-1. Numbered
-2. List
 
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/anunav83/ZipCodeFinder/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+### Distribution of datapoints grouped by their Zipcode.
