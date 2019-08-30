@@ -1,6 +1,6 @@
 ## Finding Zip Codes based on latitude and longitude
 
-As part of another project I had geocodes of over 100,000 location beloging to same neighborhood, the data is useless unless we had the ZIP codes the location belonged to. Using google APIs / other Thrid Party APIs had a cap on how many zipcodes we could find in a day for free.
+As part of another project I had geocodes of over 100,000 location belonging to same neighborhood. The data is useless unless we had the ZIP codes the location belonged to. Using google APIs / other Thrid Party APIs had a cap on how many zipcodes we could find in a day for free.
 
 In this project we will determine the zip codes based on the geocode( latitude and longitude) with upto 97.7% accuracy using clustering techniques ( KNearest Neighbors)
 
